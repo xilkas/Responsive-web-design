@@ -1,3 +1,50 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* END OF RESET CSS */
+
+
 /* Paste your css code here */
 body{
     font-family:Arial;
@@ -21,40 +68,43 @@ body{
     background-color: #e6834c;
     border-radius: 50%;
   }
-  /* .main-info{
-    text-align: center;
-    border:70px;
-    margin-left:40px;
-    margin-right:40px;
-    margin-top:40px;
-    margin-bottom:20px;
-    background-color:#efeff5;
-  } */
+  
   .main-info{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+
   padding: 50px;
   background-color: #f0f4ff;
-  margin: 30px;
-  text-align: center;
+  margin: 30px 0px;
+  /* text-align: center; */
   }
- 
+ .main-info h3{
+   margin: 20px 0px;
+ }
   
   .header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     background-color: #454f6f; 
-    /* display: flex; */
     font-size: 18px; 
-    text-decoration: none
+    padding: 20px 0px;
   }
   
-  .header-nav{
+  /* .header-nav{
     text-align: center;
     display:flex;
-  }
-  header nav{
-    display: flex;
-    padding:20px;
+    justify-content: space-between;
+    align-items: center;
+  } */
+   header nav{
+     width: 100%;
+    /* padding:20px;
     margin-left:125px;
     font-size: 18px; 
-    text-decoration: none
+    text-decoration: none */
   }
   .header nav a{
     margin-left: 20px;
@@ -64,9 +114,11 @@ body{
   }
   
   .header h4{
-    margin-left:30px;
+    text-align: center;
+    /* margin-left:30px; */
     color:white;
-  }
+    margin: 10px 0px;
+  } 
   
   a:hover{
     background-color:grey;
@@ -79,45 +131,16 @@ body{
   } */
   .menu{
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
   }
+  
+.menu p{
+  text-align: center;
+  margin: 20px 0px;
 
-  /* .left-up{
-    height: 25%;
-    width:25%;
-    margin-left: 50px;
-  }
-  .content-container{ 
-    display:flex;
-    padding:10px;
-  } 
-  
-  .right-up{ 
-    margin-left:50px;
- } 
-   .left-up h3{ 
-   text-align: center;
-   } 
-  
-  
-   .content-container1{ 
-    display:flex;
-    padding:20px;
-   } 
-  .left-up{
-    margin-left:20px;
-  }
-  .left-down{ 
-     margin-left:10px; 
-    margin-right:10px;
-  } 
-  .left-down h3{ 
-    text-align:center;
-   } 
-  .right-down h3{ 
-    text-align:center;
-  } 
-   */
+}
   .footer{ 
     text-align: center;
   } 
@@ -177,51 +200,23 @@ text-align: center;
 
 
   
-  @media (min-width: 500px) {
-    nav {
-      flex-direction: row;
-      justify-content: space-around;
-    }
-    
-    .header nav a {
-      border: 0;
-    }
-    /* .menu{
-      width: 100px;
-    } */
-    
+  @media (min-width: 600px) {
+   .header{
+     flex-direction: row;
+   }
+   .menu{
+     display: flex;
+     flex-direction: row;
+     /* justify-content:center; */
+     flex-wrap: wrap;
+   }
+   .pasta{
+     margin:0px 1px;
+   }
+   .rice{
+     margin:0px 10px;
+   }
   }
+
+
   
-  @media (min-width: 800px) {
-    .header nav{
-      display: flex;
-      flex-direction: row-reverse;
-      justify-content: center;
-      align-items: center;
-      padding: 1rem 0;
-      margin-bottom: 3rem;
-    }
-    
-    
-    nav a {
-      margin: 0 1.2rem;
-    }
-    
-    header {
-      display: flex;
-      justify-content: space-between;
-    }
-    
-    header div {
-      width: 50%
-    }
-    
-      /* .title img {
-      display: block;
-      width: 350px;
-      height: auto;
-    } */
-    /* .menu{
-      width: 100px; */
-    }
-  } 
