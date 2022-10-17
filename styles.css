@@ -1,1 +1,242 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* END OF RESET CSS */
+
+
 /* Paste your css code here */
+body{
+    font-family:Arial;
+    box-sizing: border-box;
+    width: 700px;
+    margin: 0 auto;
+  }
+  .title{
+    display:flex;
+    flex-direction: column;
+    font-family: Arial bold;
+    /* align-items: center; */
+    background-color: #e6834c;
+    color: white;
+    padding: 50px 50px;
+  }
+  .title h1 h2{
+
+    
+  }
+   .title img{
+    background-color: #e6834c;
+    border-radius: 50%;
+  }
+  
+  .main-info{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 50px;
+  background-color: #f0f4ff;
+  margin: 30px 0px;
+  /* text-align: center; */
+  }
+ .main-info h3{
+   margin: 20px 0px;
+ }
+  
+  .header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #454f6f; 
+    font-size: 18px; 
+    padding: 20px 0px;
+  }
+  
+  /* .header-nav{
+    text-align: center;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+  } */
+   header nav{
+     width: 100%;
+    /* padding:20px;
+    margin-left:125px;
+    font-size: 18px; 
+    text-decoration: none */
+  }
+  .header nav a{
+    margin-left: 20px;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+  }
+  
+  .header h4{
+    text-align: center;
+    /* margin-left:30px; */
+    color:white;
+    margin: 10px 0px;
+  } 
+  
+  a:hover{
+    background-color:grey;
+  }
+  /* #hero-img{
+      display: flex;
+      width: 350px;
+      height: auto;
+      border-radius: 50%;
+  } */
+  .menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0px;
+  }
+  .pasta img{
+    border-radius: 5%;
+  }
+  .rice img{
+    border-radius: 5%;
+  }
+  .catering img{
+    border-radius: 5%;
+  }
+.menu p{
+  text-align: center;
+  margin: 20px 0px;
+
+}
+  .footer{ 
+    /* text-align: center; */
+  } 
+   .footer h4{
+    margin-left:30px;
+    color:white;
+margin: 20px 10px;   } 
+
+  .footer-nav{
+    background-color: #333d59;
+    text-align: center;
+    display:flex;
+    flex-direction: row;
+  }
+  .footer nav{
+    /* display: flex;
+    justify-content: space-around; */
+    margin-left:125px;
+    padding:20px;
+    font-size: 18px; 
+    text-decoration: none
+  }
+  .footer nav a{
+    margin-left: 20px;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+  }
+  
+  .copyright {
+    background-color: #e6834c;
+    padding:5px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  a:hover, h3:hover, h4:hover{
+    background-color:grey;
+  }
+
+  
+  .contact-form{
+    background-color: #f0f4ff;
+    padding: 50px;
+    margin: auto 0; 
+  }
+.contact-form h2{
+text-align: center;
+}
+  input[type=text]{
+    width: 600px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;}
+   input[type=submit] {
+     width:600px;
+     background-color: #e6834c;
+     padding: 12px 20px;
+     margin: 8px 0;
+   }
+
+
+  
+  @media (min-width: 600px) {
+   .header{
+     flex-direction: row;
+   }
+   .menu{
+     display: flex;
+     flex-direction: row;
+     /* justify-content:center; */
+   }
+   .pasta{
+     margin:0px 1px;
+   }
+   .rice{
+     margin:0px 10px;
+   }
+   .title{
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+   }
+   
+   
+  }
+  
+    
+  @media screen and (max-width: 600px)
+
+  
